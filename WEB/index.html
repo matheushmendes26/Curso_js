@@ -20,7 +20,10 @@
             document.querySelectorAll('a').forEach(link =>{
                 link.onclink = function(e){
                     e.preventDefault()
-                    console.log('ACAO!!') 
+                    const consteudo = document.getElementById('conteudo')
+                    fetch(link.href)
+                        .then(resp => resp.text())
+                        .then(html => consteudo.innerHTML = html)
                 }
             }
             )   
