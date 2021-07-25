@@ -1,7 +1,6 @@
 const colors = {
-    p: '#ddd',
-    div: '#aaa',
-    span: '#220',
+    p: '#000',
+    div: '#BF0',
     selection: '#f0403a',
     ul: '#111345',
     ol: '#555fff',

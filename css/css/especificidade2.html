@@ -6,6 +6,29 @@
     <title>Especificidade CSS</title>
     <style>
         /* https://specificity.keegan.st/ */
+        /*
+
+        1. inline
+        2. ID
+        3. Classe, Pseudo-Classe, Atributo
+        4.Elemento, Pseudo-Elementos
+
+        */
+        body{
+            background-color: aquamarine;
+        }
+        div{
+            background-color: beige;
+        }
+        div[wm-cor]{
+            background-color: orange;
+        }
+        div.estilo{
+            background-color: greenyellow;
+        }
+        #unico1, #unico2{
+            background-color: #000;
+        }
     </style>
 </head>
 

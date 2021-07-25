@@ -6,7 +6,21 @@
     <title>Especificidade CSS</title>
     <style>
         /* https://developer.mozilla.org/pt-BR/docs/Web/CSS/Specificity */
+        /*
+            Em linha gerais 
+
+            1. Cuidado com important
+            2. Seletores mais específicos
+            3. Última regra processada (empate)
+        */
+        .observacao{
+            background-color: #555;
+        }
+        p{
+            background: linear-gradient(to right, blue,blueviolet,red);
+        }
     </style>
+
 </head>
 
 <body>
